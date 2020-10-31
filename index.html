@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   <meta charset="utf-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="css/style.css"> 
+   <title>OKTOBRIS TEST WORK</title>
+</head> 
+<body> 
+  <table>
+    <tr>
+        <td>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label>Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label>City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div  class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+                <p>Check for Newsletter:</p>
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Submitted</p>
+            </form>
+        </td>
+        <td>
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+  <script src="js/main.js"></script> 
+</body> 
+</html> 
